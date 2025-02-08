@@ -53,6 +53,10 @@ class JuanPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ]);
+            ])
+            ->brandName('SAMA')
+            ->sidebarCollapsibleOnDesktop('true')//Menú lateral colapsable
+            ->brandLogo(asset('storage/veterinario.png'))//Ruta del logotipo
+            ->brandLogoHeight('70px'); //Cambia el tamaño aquí;
     }
 }
