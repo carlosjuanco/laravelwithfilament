@@ -1,2 +1,2 @@
-CREATE DATABASE filament;
+CREATE DATABASE nombreDeLaBaseDeDatosParaElDesarrollo;
 SHOW DATABASES;
