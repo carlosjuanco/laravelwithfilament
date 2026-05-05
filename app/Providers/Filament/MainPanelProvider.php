@@ -27,6 +27,10 @@ class MainPanelProvider extends PanelProvider
             ->id('main')
             ->path('main')
             ->login()
+            ->brandName('Juanito')
+            ->sidebarCollapsibleOnDesktop('true') //Habilitar menú lateral colapsable
+            ->brandLogo(asset('storage/logoJuanito.png')) //Ruta del logotipo
+            ->brandLogoHeight('50px') //Cambia el tamaño aquí
             ->colors([
                 'primary' => Color::Amber,
             ])
