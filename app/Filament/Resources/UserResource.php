@@ -61,19 +61,7 @@ class UserResource extends Resource
                     ->label('Corre electrónico')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('role.name')
-                    ->label('Rol'),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('deleted_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->label('Rol')
             ])
             ->filters([
                 Tables\Filters\TrashedFilter::make(),
