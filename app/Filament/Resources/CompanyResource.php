@@ -21,6 +21,13 @@ class CompanyResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    // Establecer el título de página y el título en el menú
+    protected static ?string $pluralModelLabel = 'Empresa';
+
+    // Establecer el título del botón agregar, el título de mi modal registrar, editar
+    // y finalmente el título del modal ver
+    protected static ?string $modelLabel = 'empresa';
+
     public static function form(Form $form): Form
     {
         /**
@@ -107,10 +114,6 @@ class CompanyResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('tipo'),
-                Tables\Columns\TextColumn::make('paternal_surname')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('maternal_surname')
-                    ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
