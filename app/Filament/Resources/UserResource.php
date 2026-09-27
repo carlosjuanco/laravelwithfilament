@@ -22,6 +22,8 @@ class UserResource extends Resource
 
     protected static ?string $navigationLabel = 'Usuarios';
 
+    // Establecer el título del botón agregar, el título de mi modal registrar, editar
+    // y finalmente el título del modal ver
     protected static ?string $modelLabel = 'usuario';
 
     public static function form(Form $form): Form
