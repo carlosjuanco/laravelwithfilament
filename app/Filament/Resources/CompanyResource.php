@@ -111,7 +111,7 @@ class CompanyResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name')
+                Tables\Columns\TextColumn::make('nombre_completo')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('tipo'),
                 Tables\Columns\TextColumn::make('created_at')
