@@ -19,8 +19,11 @@ class RoleResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    // Establecer el título del botón agregar, el título de mi modal registrar, editar
+    // y finalmente el título del modal ver
     protected static ?string $modelLabel = 'rol';
 
+    // Establecer el título de página y el título en el menú
     protected static ?string $pluralModelLabel = 'roles';
 
     public static function form(Form $form): Form
