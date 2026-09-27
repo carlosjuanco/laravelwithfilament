@@ -86,6 +86,8 @@ class CompanyResource extends Resource
         return $form
             ->schema([
                 TextInput::make('name')
+                    // Renombrar el nombre del campo visualmente
+                    ->label('Nombre')
                     ->required()
                     ->maxLength(255),
                 Select::make('tipo')
@@ -97,10 +99,14 @@ class CompanyResource extends Resource
                     ->live()
                     ->required(),
                 TextInput::make('paternal_surname')
+                    // Renombrar el nombre del campo visualmente
+                    ->label('Apellido paterno')
                     ->maxLength(50)
                     ->visible(fn (Get $get) => $get('tipo') === 'Persona física')
                     ->required(fn (Get $get) => $get('tipo') === 'Persona física'),
                 TextInput::make('maternal_surname')
+                    // Renombrar el nombre del campo visualmente
+                    ->label('Apellido materno')
                     ->maxLength(50)
                     ->visible(fn (Get $get) => $get('tipo') === 'Persona física')
                     ->required(fn (Get $get) => $get('tipo') === 'Persona física'),
